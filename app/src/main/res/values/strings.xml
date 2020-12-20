@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">loginprogram</string>
+    <string name="SignUP">SIGN UP</string>
+    <string name="SignIn">SIGN IN</string>
+    <string name="LogIn">LOG IN</string>
+    <string name="FACEBOOK">FACEBOOK</string>
+    <string name="GOOGLE">GOOGLE+</string>
+    <string name="Company">Company</string>
+    <string name="Logo">Logo</string>
+    <string name="USERNAME">USER NAME</string>
+</resources>

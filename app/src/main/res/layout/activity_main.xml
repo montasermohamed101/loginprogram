@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/Orange">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/google"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:id="@+id/img"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:text="@string/Company"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#FDD835"
+        android:id="@+id/company"  ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Logo"
+      android:layout_alignBaseline="@id/company"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/company"
+        android:textColor="#FFFFFF"
+        android:id="@+id/logo"
+        ></TextView>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button"
+    android:layout_below="@id/img"
+    android:layout_marginTop="200dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:text="@string/SignUP"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:id="@+id/btn1"
+    ></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_orange"
+        android:layout_below="@id/btn1"
+        android:layout_margin="@dimen/marign_20"
+        android:textColor="@color/white"
+        android:text="@string/SignIn"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        ></Button>
+
+
+
+</RelativeLayout>

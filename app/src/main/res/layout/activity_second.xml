@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:background="@color/Orange">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/google"
+       android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:id="@+id/img"></ImageView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt1"
+    android:text="@string/USERNAME"
+    android:layout_marginStart="@dimen/marign_20"
+    android:layout_below="@id/img"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="35dp"
+    android:textColor="#FDD835"
+    android:textSize="20sp"
+    android:textStyle="bold"></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/marign_20"
+        android:layout_marginEnd="@dimen/marign_20"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="@color/white"
+        android:hint="rahula@gmail.com"
+        android:id="@+id/ed1"
+        android:textColorHint="@color/white"></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt2"
+        android:text="PASSOWRD"
+        android:layout_alignLeft="@id/ed1"
+        android:layout_alignStart="@id/ed1"
+        android:layout_below="@id/ed1"
+        android:layout_marginTop="15dp"
+        android:textColor="#FDD835"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/marign_20"
+    android:layout_marginEnd="@dimen/marign_20"
+
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@id/txt2"
+   android:layout_marginTop="7dp"
+    android:backgroundTint="@color/white"
+   android:hint="**********"
+    android:id="@+id/ed2"
+    android:textColorHint="@color/white"></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Passowrd?"
+        android:textAllCaps="false"
+        android:textColor="#FDD835"
+        android:layout_below="@id/ed2"
+        android:layout_margin="10dp"
+        android:id="@+id/txt3"
+        android:layout_alignEnd="@id/ed2"></TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt3"
+        android:background="@drawable/button_orange"
+        android:layout_margin="@dimen/marign_20"
+        android:text="@string/LogIn"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:id="@+id/btn1"></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn1"
+        android:text="OR"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:id="@+id/ortxt"></TextView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ortxt"
+    android:layout_marginTop="15dp">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button"
+        android:text="@string/FACEBOOK"
+        android:textColor="#1E88E5"
+        android:drawableStart="@drawable/facebook"
+        android:paddingLeft="@dimen/marign_20"
+        android:paddingRight="@dimen/marign_20"
+        android:layout_margin="@dimen/marign_20"></Button>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button"
+        android:text="@string/GOOGLE"
+        android:textColor="#F4511E"
+        android:drawableStart="@drawable/google_plus"
+        android:paddingLeft="@dimen/marign_20"
+        android:paddingRight="@dimen/marign_20"
+        android:layout_margin="@dimen/marign_20"></Button>
+</LinearLayout>
+
+
+
+
+</RelativeLayout>
